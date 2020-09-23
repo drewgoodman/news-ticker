@@ -1,24 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>News Ticker App</h1>
+      <h2>This is working.</h2>
+      <p>This app is in {process.env.NODE_ENV} mode</p>
+      <p>The secret key is {process.env.REACT_APP_SECRET_KEY}</p>
     </div>
   );
 }
